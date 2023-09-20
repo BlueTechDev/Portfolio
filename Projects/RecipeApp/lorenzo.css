@@ -38,6 +38,12 @@ nav {
   display: block;
 }
 
+.black {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 nav ul li .desktop-menu {
   color: #ffff;
 }
@@ -92,6 +98,7 @@ main {
   text-align: center;
   margin-bottom: 20px;
   flex-basis: calc(33.33% - 20px);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .option-card img {
@@ -121,8 +128,16 @@ main {
 }
 
 .option-card a:hover {
-  background-color: #000;
+  background-color: #333333;
   color: #eab806;
+}
+
+.option-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.black:hover {
+  color: #0855b1;
 }
 
 .testimonials {
@@ -135,6 +150,7 @@ main {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .testimonial p {
@@ -147,6 +163,9 @@ main {
   font-style: italic;
 }
 
+.testimonial:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* Footer */
 footer {
   background-color: #d89700;

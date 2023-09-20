@@ -1,183 +1,184 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #ffdd70;
-    padding: 20px;
-  }
-  
-  /* Main section styles */
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  #recipe-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  #recipe-description {
-    font-size: 16px;
-    color: #888;
-    margin-bottom: 20px;
-  }
-  
-  #conversation {
-    background-color: #f5f5f5;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  #instructions {
-    margin-top: 20px;
-  }
-  
-  #step-list {
-    list-style-type: decimal;
-    margin-left: 20px;
-  }
-  
-  /* Sidebar styles */
-  aside {
-    background-color: #333;
-    padding: 20px;
-    width: 200px;
-    height: 100vh;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .sidebar-open {
-    transform: translateX(0);
-  }
-  
-  #sidebar {
-    margin-bottom: 20px;
-  }
-  
-  #save-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: gold;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Hamburger menu styles */
-  .hamburger {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 999;
-    display: none;
-  }
-  
-  .hamburger span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin-bottom: 5px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  
-  .hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-  }
-  
-  /* Content area styles */
-  #content-area {
-    border: 2px solid gold;
-    padding: 20px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  /* Footer */
-  footer {
-    background-color: #ffdd70;
-    color: #333333;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  footer p {
-    margin: 0;
-    color: #333333;
-    text-align: left;
-  }
-  
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    list-style: none;
-  }
-  
-  .footer-social a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #333333;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  .footer-social a:hover {
-    color: #0855b1;
-    font-size: bold;
-    font-size: 18px;
-  }
-  
-  .back-to-top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #00b0ff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    display: none;
-  }
+h1, h2, h3 {
+  color: #333;
+}
 
-  #backToTopButton:hover {
-    background-color: black;
-  }
+p {
+  color: #666;
+}
+
+/* Header styles */
+header {
+  background-color: #ffdd70;
+  padding: 20px;
+}
+
+/* Main section styles */
+main {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+#recipe-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#recipe-description {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+#conversation {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Add border property */
+}
+
+#instructions {
+  margin-top: 20px;
+}
+
+#step-list {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/* Sidebar styles */
+aside {
+  background-color: #333;
+  padding: 20px;
+  width: 200px;
+  height: 100vh;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+#sidebar {
+  margin-bottom: 20px;
+}
+
+#save-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: gold;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Content area styles */
+#content-area {
+  border: 2px solid gold;
+  padding: 20px;
+  width: 100%; /* Set width to 100% */
+}
+
+/* Footer */
+footer {
+  background-color: #ffdd70;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  color: #333333;
+  text-align: left;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #0855b1;
+  font-size: bold;
+  font-size: 18px;
+}
+
+.back-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00b0ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+#backToTopButton:hover {
+  background-color: black;
+}

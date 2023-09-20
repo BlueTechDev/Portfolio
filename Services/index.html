@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/Landing Page/Assets/Blue Tech Dev.svg" type="image/x-icon">
+  <title>Projects - BlueTechDev</title>
+  <link rel="stylesheet" href="/css/services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="navbar-container">
+          <div class="logo">
+            <a href="/Landing Page/index.html"><img src="/Landing Page/Assets/Blue Tech Dev.svg" alt="Logo"></a>
+          </div>
+          <ul class="menu">
+            <li><a href="/Landing Page/index.html">Home</a></li>
+            <li><a href="/AboutMe/index.html">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Welcome to <span class="color-blue">BlueTechDev</span></h1>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h1 class="project-title" data-project="Music Card">Music Card</h1>
+          <p class="project-description">
+            I have developed a music card component using HTML, CSS, and JavaScript. The music card displays album artwork, song information, and provides playback controls for users to enjoy their favorite songs.
+          </p>
+        </div>
+        <div class="project-card">
+          <h1 class="project-title" data-project="Train Counter">Train Counter</h1>
+          <p class="project-description">
+            I have created a train counter application that allows users to track the number of trains passing through a railway station. The application uses JavaScript to increment and decrement the train count and displays the current count in real-time.
+          </p>
+        </div>
+        <div class="project-card">
+          <h1 class="project-title" data-project="Weather Forecast App">Weather Forecast App</h1>
+          <p class="project-description">
+            I have created a weather forecast application that provides users with real-time weather information and forecasts. The app utilizes APIs to fetch weather data for different locations and displays it in a visually appealing and user-friendly manner. Users can search for specific locations and view detailed weather information, including temperature, humidity, wind speed, and more.
+          </p>
+        </div>
+        <div class="project-card">
+          <h1 class="project-title" data-project="Recipe App">Recipe App</h1>
+          <p class="project-description">
+            I have developed a recipe application that allows users to search for and view various recipes. The app fetches recipe data from an API and displays the ingredients, instructions, and cooking time. Users can also save their favorite recipes for future reference.
+          </p>
+        </div>
+        <div class="project-card">
+          <h1 class="project-title" data-project="Task Tracker">Task Tracker</h1>
+          <p class="project-description">
+            I have created a task tracker application that helps users manage their daily tasks. The app allows users to add, delete, and update tasks, set due dates, and mark tasks as complete. It provides an organized and efficient way to stay on top of your to-do list.
+          </p>
+        </div>
+        <div class="project-card">
+          <h1 class="project-title" data-project="Movie Recommendation App">Movie Recommendation App</h1>
+          <p class="project-description">
+            I have developed a movie recommendation application that suggests personalized movie recommendations based on user preferences. The app utilizes machine learning algorithms to analyze user preferences and provides tailored movie suggestions for an enhanced movie-watching experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Your project cards or images will go here -->
+
+    <hr>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-social">
+        <li><a href="#"><i class="fab fa-tiktok"></i>Tiktok</a></li>
+        <li><a href="#"><i class="fab fa-github"></i>Github</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i>&nbsp;LinkedIn</a></li>
+      </ul>
+      <p>Copyright 2023, BlueTechDev</p>
+    </div>
+  </footer>
+  <button id="backToTopButton" class="back-to-top-button">Back to Top <i class="fas fa-angle-up"></i></button>
+  <script src="/js/services.js"></script>
+</body>
+</html>

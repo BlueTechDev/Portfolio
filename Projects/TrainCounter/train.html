@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="train.css">
+    <title>Train Counter</title>
+</head>
+<body>
+    <header>Train Station</header>
+    <main class="container">
+        <!-- Time -->
+        <div id="time">
+            <h2><strong>Current Time</strong></h2>
+            <small id="currentHour">00:</small>
+            <span>:</span>
+            <small id="current-minute">00</small>
+            <span>:</span>
+            <small id="currentSeconds">00</small>
+        </div>
+
+        <!-- Date -->
+        <div id="date">
+            <h2><strong>Today's date is: </strong></h2>
+            <small id="month"></small>
+            <span>/</span>
+            <small id="dayOfMonth"></small>
+            <span>/</span>
+            <small id="year"></small>
+        </div>
+        
+        <div id="passengers">
+            <h2><p class="passenger-count">Passenger Count: <span id="passenger-count">0</span></p></h2>
+        </div>
+        <!-- Buttons to increase and decrease passenger count-->
+        <button id="increase">+</button>
+        <button id="decrease">-</button>
+        <button id="savebtn">Save Count</button>
+        <p id="saved-message">Number of Passengers Saved: <span>0</span></p>
+        <button id="resetbtn">Reset</button>
+        &nbsp;
+        <input type="number" value="5" min="0" max="99"/>
+    </main>
+    <script src="train.js"></script>
+</body>
+</html>

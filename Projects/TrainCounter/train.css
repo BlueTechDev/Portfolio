@@ -1,0 +1,132 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Styles for Time and Date */
+#time, #date {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#time h2, #date h2 {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+#time small, #date small {
+    font-size: 1.2rem;
+}
+
+#time span, #date span {
+    margin: 0 3px;
+}
+
+/* Styles for Passenger Count */
+#passengers {
+    margin: 20px 0;
+}
+
+.passenger-count {
+    font-size: 1.5rem;
+}
+
+.passenger-count span {
+    font-weight: bold;
+}
+
+/* Styles for Buttons and Input */
+button, input[type='number'] {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#increase, #decrease {
+    background-color: #fff;
+    color: #2196f3;
+}
+
+#resetbtn {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+#savebtn {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.container {
+    background-image: url(/Projects/TrainCounter/assets/3D_Animation_Style_an_empty_train_at_the_station_with_a_moonli_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Add this line to make the image cover the container */
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 600px) {
+    /* Adjust font sizes and margins for smaller screens */
+    header {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    #time h2, #date h2 {
+        font-size: 1.2rem;
+        margin-right: 3px;
+    }
+
+    #time small, #date small {
+        font-size: 1rem;
+    }
+
+    #time span, #date span {
+        margin: 0 2px;
+    }
+
+    .passenger-count {
+        font-size: 1.2rem;
+    }
+
+    button, input[type='number'] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

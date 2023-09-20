@@ -6,12 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -19,31 +14,44 @@ header {
     margin-bottom: 20px;
 }
 
-.container {
+.train-counter {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url(/Projects/TrainCounter/assets/3D_Animation_Style_an_empty_train_at_the_station_with_a_moonli_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Styles for Time and Date */
-#time, #date {
+#time,
+#date {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
 
-#time h2, #date h2 {
+#time h2,
+#date h2 {
     font-size: 1.5rem;
     margin-right: 5px;
 }
 
-#time small, #date small {
+#time small,
+#date small {
     font-size: 1.2rem;
 }
 
-#time span, #date span {
+#time span,
+#date span {
     margin: 0 3px;
 }
 
@@ -61,7 +69,8 @@ header {
 }
 
 /* Styles for Buttons and Input */
-button, input[type='number'] {
+button,
+input[type='number'] {
     margin: 5px;
     padding: 10px;
     font-size: 1rem;
@@ -70,7 +79,8 @@ button, input[type='number'] {
     border-radius: 5px;
 }
 
-#increase, #decrease {
+#increase,
+#decrease {
     background-color: #fff;
     color: #2196f3;
 }
@@ -85,20 +95,30 @@ button, input[type='number'] {
     color: #fff;
 }
 
-.container {
-    background-image: url(/Projects/TrainCounter/assets/3D_Animation_Style_an_empty_train_at_the_station_with_a_moonli_0.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; /* Add this line to make the image cover the container */
-    background-position: center;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-}
-
+#custom-passenger-count {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #custom-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #custom-submit:hover {
+    background-color: #45a049;
+  }
+  
+  #custom-submit:active {
+    background-color: #3e8e41;
+  }
 
 /* Media Query for Responsiveness */
 @media (max-width: 600px) {
@@ -108,16 +128,19 @@ button, input[type='number'] {
         margin-bottom: 10px;
     }
 
-    #time h2, #date h2 {
+    #time h2,
+    #date h2 {
         font-size: 1.2rem;
         margin-right: 3px;
     }
 
-    #time small, #date small {
+    #time small,
+    #date small {
         font-size: 1rem;
     }
 
-    #time span, #date span {
+    #time span,
+    #date span {
         margin: 0 2px;
     }
 
@@ -125,7 +148,8 @@ button, input[type='number'] {
         font-size: 1.2rem;
     }
 
-    button, input[type='number'] {
+    button,
+    input[type='number'] {
         font-size: 0.9rem;
         padding: 8px;
     }

@@ -205,6 +205,11 @@ footer p {
   flex-basis: calc(50% - 20px);
 }
 
+.option-card img {
+  width: 80px;
+  height: 80px;
+}
+
 @media screen and (max-width: 480px) {
   .options .option-card {
       flex-basis: calc(100% - 20px);

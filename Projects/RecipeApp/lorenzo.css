@@ -38,6 +38,10 @@ nav {
   display: block;
 }
 
+nav ul li .desktop-menu {
+  color: #ffff;
+}
+
 .mobile-menu {
   display: none; /* Hide the mobile menu by default */
 }
@@ -57,9 +61,8 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a {
-  transition: all .4s ease;
-  color: #333;
+nav ul li a:hover {
+  color: #000;
   font-size: 18px;
   text-shadow: #f5f5f5;
 }
@@ -67,10 +70,6 @@ nav ul li a {
 .logo {
   width: 60px; /* Adjust the width as per your desired size */
   height: auto; /* Maintain aspect ratio */
-}
-
-nav {
-  position: relative;
 }
 
 /* Main */
@@ -122,7 +121,8 @@ main {
 }
 
 .option-card a:hover {
-  background-color: #d89700;
+  background-color: #000;
+  color: #eab806;
 }
 
 .testimonials {

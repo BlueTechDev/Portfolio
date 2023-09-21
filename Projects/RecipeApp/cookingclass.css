@@ -19,6 +19,28 @@ header {
   padding: 20px;
 }
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
 /* Main section styles */
 main {
   margin: 0 auto;
@@ -58,38 +80,22 @@ section {
   margin-left: 20px;
 }
 
-/* Sidebar styles */
-aside {
-  background-color: #333;
-  padding: 20px;
-  width: 200px;
-  height: 100vh;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.sidebar-open {
-  transform: translateX(0);
-}
-
-#sidebar {
-  margin-bottom: 20px;
-}
-
 #save-button {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: gold;
-  color: #333;
+  background-color: #333;
+  color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+#save-button:hover {
+  background-color: #888;
+  color: #000;
+  transition-delay: .5ms;
 }
 
 /* Hamburger menu styles */

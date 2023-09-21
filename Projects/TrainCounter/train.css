@@ -7,12 +7,36 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(42, 60, 79);
 }
 
 header {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 4px;
+  }
 
 .train-counter {
     background-color: rgba(0, 0, 0, 0.7);

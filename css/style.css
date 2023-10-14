@@ -14,58 +14,121 @@ header {
     padding: 10px;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-main {
-    padding: 20px;
-}
-
-#hero {
-    text-align: center;
-    background: url('your-image.jpg') center center no-repeat;
-    background-size: cover; /* Add this property to ensure the image covers the entire hero section */
-    padding: 50px 0; /* Increase the padding to create more space around the text */
-    color: #fff;
-}
-
-#hero h1 {
-    font-size: 36px; /* Adjust the font size to make it more prominent */
-}
-
-#hero p {
-    font-size: 18px; /* Adjust the font size for better readability */
-}
-
-
-#about, #skills, #education, #contact {
-    margin: 20px 0;
-}
-
-#projects {
-    margin: 20px 0;
-}
-
-.project-card {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* General section styles */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background: #f8f8f8;
     border-radius: 5px;
 }
 
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+/* Skills section styles */
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+/* Project section styles */
+.project-card {
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.carousel-inner {
+    background: none;
+}
+
+/* Contact section styles */
+#contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+#contact input,
+#contact textarea {
+    flex: 0 0 calc(48% - 20px); /* 48% width with some margin */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+@media (max-width: 767px) {
+    #contact form {
+        flex-direction: column; /* Stack input fields on top of each other */
+    }
+
+    #contact input,
+    #contact textarea {
+        flex: 1; /* Full width for smaller screens */
+    }
+}
+
+
+/* Footer styles */
 #footer {
     background-color: #333;
     color: #fff;
@@ -85,7 +148,6 @@ main {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
 }
 
 form {

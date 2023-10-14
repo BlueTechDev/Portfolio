@@ -57,14 +57,25 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Hero section styles */
-#hero {
-    background-image: url('your-hero-image.jpg');
-    background-size: cover;
+/* Style for the profile picture */
+.profile-pic {
     text-align: center;
-    color: #fff;
-    padding: 100px 0;
+    margin: 20px 0;
 }
+
+.profile-pic img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 50%; /* Rounded profile picture */
+    border: 2px solid #007BFF; /* Add a border with a color of your choice */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Adjust other styles for the "About" section as needed */
+#about {
+    margin: 20px 0;
+}
+
 
 #hero h1 {
     font-size: 36px;

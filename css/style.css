@@ -29,12 +29,20 @@ main {
 
 #hero {
     text-align: center;
+    background: url('your-image.jpg') center center no-repeat;
+    background-size: cover; /* Add this property to ensure the image covers the entire hero section */
+    padding: 50px 0; /* Increase the padding to create more space around the text */
+    color: #fff;
 }
 
-#hero-img {
-    max-width: 100%;
-    height: auto;
+#hero h1 {
+    font-size: 36px; /* Adjust the font size to make it more prominent */
 }
+
+#hero p {
+    font-size: 18px; /* Adjust the font size for better readability */
+}
+
 
 #about, #skills, #education, #contact {
     margin: 20px 0;

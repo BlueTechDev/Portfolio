@@ -1,0 +1,229 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form, button, input, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about, #skills, #education, #contact {
+    margin: 20px 0;
+}
+
+#projects {
+    margin: 20px 0;
+}
+
+.project-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#download-resume {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffffff;
+    margin: 3px 0;
+}
+
+/* Media query for displaying the hamburger menu on small screens */
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        opacity: .7;
+    }
+    .menu a:hover {
+        background-color:#f4f4f4;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Adjust the hero image size */
+    #hero-img {
+        width: 100%;
+    }
+
+    /* Increase spacing and margins for better readability */
+    main {
+        padding: 40px;
+    }
+
+    /* Display skills in two columns */
+    #skills ul {
+        column-count: 2;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 991px) {
+    /* Center align navigation links */
+    nav ul {
+        text-align: center;
+    }
+    
+    /* Adjust the hero image size */
+    #hero-img {
+        width: 100%;
+    }
+
+    /* Decrease spacing and margins for a more compact layout */
+    main {
+        padding: 20px;
+    }
+
+    /* Display skills in a single column */
+    #skills ul {
+        column-count: 1;
+    }
+
+    /* Adjust font sizes for better readability on smaller screens */
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 767px) {
+    /* Adjust the navigation for smaller screens */
+    nav ul {
+        text-align: center;
+        display: block;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Reduce the hero image size to fit smaller screens */
+    #hero-img {
+        width: 100%;
+    }
+
+    /* Decrease spacing and margins for better use of limited space */
+    main {
+        padding: 10px;
+    }
+
+    /* Make project cards stack on top of each other for smaller screens */
+    .project-card {
+        margin: 10px 0;
+    }
+
+    /* Adjust font sizes for better readability on smaller screens */
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+}

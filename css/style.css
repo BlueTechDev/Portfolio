@@ -53,12 +53,19 @@ section {
 }
 
 .carousel-item h2, h3 {
-    color: #ffffffff;
+    color: #ccc;
 }
 
 h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+a {
+    text-decoration:none!important;
+    color: #ccc;
 }
 
 /* Style for the profile picture */
@@ -210,7 +217,7 @@ button[type="submit"] {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #333;
         position: absolute;
         top: 70px;
         right: 20px;
@@ -276,6 +283,10 @@ button[type="submit"] {
     /* Adjust font sizes for better readability on smaller screens */
     h1, h2, h3 {
         font-size: 24px;
+    }
+
+    .carousel-item h2, h3 {
+        color: #ffffffff;
     }
 }
 

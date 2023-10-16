@@ -52,6 +52,10 @@ section {
     border-radius: 5px;
 }
 
+.carousel-item h2, h3 {
+    color: #ffffffff;
+}
+
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
